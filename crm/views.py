@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from .models import Order
-from django.http import HttpResponse
-
+from .forms import OrderForm
 
 def first_page(request):
     order_lists = Order.objects.all()
-    return render(request, './index.html', {'orders': order_lists})
+    form = OrderForm()
+    return render(request, './index.html', {'orders': order_lists, 'form': form})
 
 
 def thanks_page(request):

@@ -16,10 +16,7 @@
 
 <form action="{% url 'thanks' %}" method="post">
     {% csrf_token %}
-    <label for="name">Name</label>
-    <input id="name" name="name">
-    <label for="phone">Phone</label>
-    <input id="phone" name="phone">
+    {{ form.as_p }}
     <button type="submit">Send</button>
 </form>
 
