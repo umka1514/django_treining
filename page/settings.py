@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crm.apps.CrmConfig',
+    'cms.apps.CmsConfig',
+    'price.apps.PriceConfig',
+    'telebot.apps.TelebotConfig',
 ]
 
 MIDDLEWARE = [
